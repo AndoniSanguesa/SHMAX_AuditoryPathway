@@ -13,6 +13,7 @@ function X = sample3dImages(sampleSize, baseSize, dataDir)
     X = zeros(baseSize.^2 * size(y, 3), sampleSize);
 
     for i = 1:n
+        disp(i/n)
         load(fullfile(dataDir, files(i).name), 'y');
         xx = 1 + floor(rand(samplePerImage, 1) * (size(y, 1) - baseSize));
         yy = 1 + floor(rand(samplePerImage, 1) * (size(y, 2) - baseSize));

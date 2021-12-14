@@ -4,7 +4,7 @@ dataDir = 'cochleogram';
 % parameters of layers
 param.sS =  [0,    0,     0,     0,     0,     0];      % skip S layers
 param.sC =  [0,    0,     0,     0,     0,     0];      % skip C layers
-param.sT =  [0,    0,     0,     0,     0,     0];      % skip Training
+param.sT =  [1,    0,     0,     0,     0,     0];      % skip Training
 param.sI =  [0,    0,     0,     0,     0,     0];      % skip Inference
 param.sP =  [0,    0,     0,     0,     0,     0];      % skip Pooling
 
